@@ -1,0 +1,111 @@
+\documentclass{report}
+
+\usepackage{amsmath,enumitem}
+
+\DeclareMathOperator{\rank}{Rank\;of}
+
+\begin{document}
+
+\chapter{Introduction}
+ In this tutotrial we see how to enumerate the items in Chapter \ref{ch:enumeration}, how to escape the space in math mode in Chapter \ref{ch:escapeSpaces} \dots \ldots  
+ 
+ \begin{equation}
+ 	A = \begin{pmatrix}
+ 	  1 & 2 & \cdots & 10  \\
+ 	  4 & 5 &  \cdots & 14\\
+ 	  \vdots  & \vdots & \ddots & \vdots  \\
+ 	  10 & 11 & \cdots & 20 	  
+ 	\end{pmatrix}_{10 \times 10}
+ \end{equation}
+
+\begin{equation}
+	a_1, \dots, a_n
+\end{equation}
+
+\begin{equation}
+	a_1 \dots a_n
+	\end{equation}
+
+
+
+\chapter{Recap: How to enumerate items}\label{ch:enumeration}
+
+\begin{enumerate}[label={(\alph*)}, start = 5]
+	\item This is my first enumeration\dots 
+	\item This is my second enumeration \dots 
+	\item This is newly added item
+\end{enumerate}
+
+dsjfdkjlkf
+dfjdklf
+djfdkljfk
+dfdkfjld
+dnfkd
+
+dfkdj
+
+djfdkjf
+
+
+\begin{enumerate}[label={(\alph*)}, resume]
+	\item \label{it:1} This item has to be enumerate as a continuation of the previous 
+	\item This is my second enumeration \dots 
+\end{enumerate}
+
+\ref{it:1}
+
+\chapter{How to escape the spaces inside the math equations}\label{ch:escapeSpaces}
+The spacing delims used in this tutorial will also work in text mode. 
+\begin{equation}
+f (x) = x \text{ and } g(x) = x^2
+\end{equation}
+
+\begin{equation}
+f (x) = x \ \text{and}\ g(x) = x^2
+\end{equation}
+
+
+\begin{equation}
+f (x) = x \, \text{and}\, g(x) = x^2
+\end{equation}
+
+\begin{equation}
+f (x) = x \; \text{and}\; g(x) = x^2
+\end{equation}
+
+David\;Raj\;Micheal 
+
+\begin{equation}
+f (x) = x, \quad \quad \quad  g(x) = x^2
+\end{equation}
+
+\begin{equation}
+f (x) = x, \qquad  g(x) = x^2
+\end{equation}
+
+
+f(x)=x $f(x)=x$ $\sin x$ $\rank A$
+
+\chapter{How to insert tables}
+
+\begin{table}[htb!]
+	\centering 
+	\begin{tabular}{|c|r|}
+		\hline
+		Name & Address \\
+		\hline 
+		Here & we learn \\
+		how to & insert \\
+		a table & \dots \\
+		\hline 
+	\end{tabular}
+\caption{This is my first table}
+\label{tab:tutorial}
+\end{table}
+
+
+The Table \ref{tab:tutorial} gives you \dots
+
+
+
+\end{document}
