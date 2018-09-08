@@ -41,7 +41,7 @@ This repository contains all my tutorials taken in Department of Statistics, PSP
     - Captioning and referring
     - Borderring
 
-> Tutorial 4(https://github.com/davidrajdgl/LaTeX-Tutorials-MSC2018/tree/master/Tutorial4)
+> [Tutorial 4](https://github.com/davidrajdgl/LaTeX-Tutorials-MSC2018/tree/master/Tutorial4)
  - How to create a simple beamer presentation
  - Sectioning the frames
  - use of commenting (%)
