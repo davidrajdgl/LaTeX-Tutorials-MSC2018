@@ -1,0 +1,62 @@
+\documentclass[169, 11pt]{beamer}
+\usepackage{enumitem}
+
+\usetheme{CambridgeUS} %This is nice theme
+\usecolortheme{dolphin}
+\usepackage{tikz}
+
+\title[Introduction \dots]{Introduction to Beamer}
+\author[David and Prasanna]{David Raj Micheal \and Prasanna}
+\date[Sep 08, 2018]{September 08, 2018}
+
+
+
+\begin{document}
+
+%\begin{frame}
+%	\maketitle
+%\end{frame}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east, xshift = 0cm, yshift=-0.5cm] at (current page.north east) {\includegraphics[scale=.2]{images/logo} };
+\end{tikzpicture}
+}
+
+\begin{frame}
+	\tableofcontents
+\end{frame}
+	
+	
+	\section{Introuduction}
+\begin{frame}{Introduction}{SubTitle}
+	\begin{enumerate}[label = {(\alph*)}, start = 4]
+		\item This is first point \{skdfjk\}
+		\item This is second point
+	\end{enumerate}
+\begin{equation}\label{eq:1}
+f(x) = \sum_{i = 1}^ \infty x^i
+\end{equation}
+
+From Equation \ref{eq:1} \dots 
+\end{frame}
+
+\begin{frame}{Second Frame}{Subtitle of the second frame}
+	content...
+\end{frame}
+
+
+\section{How to insert the figure}
+\begin{frame}
+	content...
+\end{frame}
+
+\section{Third Section}
+
+\begin{frame}
+	content...
+\end{frame}
+
+
+\end{document}
